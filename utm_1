@@ -1,0 +1,18 @@
+class book:
+    def __init__(self, titel, person, sidor):
+        self.titel =  titel #en atribut
+        self.person = person
+        self.sidor = sidor
+
+    def showinfo(self):
+        print("titel: ", self.titel)
+        print("person: ", self.person)
+        print("sidor: ", self.sidor)
+
+#Lista på vilka böcker som ska vara med
+Book1 = book("hobbit", "nisse", 320)
+Book2 = book("murder", "tomte", 270)
+
+Book1.showinfo()
+print()
+Book2.showinfo()
