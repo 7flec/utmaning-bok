@@ -1,0 +1,29 @@
+class TempraturSensor:
+    def __init__(self, location, temperature):
+        self.location = location
+        self.temperature = temperature
+
+    def increase_temprature(self):
+        self.temperature +=1
+
+    def decrease_temprature(self):
+        self.temperature -=1
+
+    def show_temprature(self):
+        print(f"{self.location}: {self.temperature} Degrees")
+
+sensor1 = TempraturSensor("Kitchen", 20)
+sensor2 = TempraturSensor("Garage", 5)
+
+print("Tempratur tidigare: ")
+sensor1.show_temprature()
+sensor2.show_temprature()
+
+sensor1.increase_temprature()
+sensor1.increase_temprature()
+sensor2.decrease_temprature()
+
+print()
+print("Tempratur just nu: ")
+sensor1.show_temprature()
+sensor2.show_temprature()
